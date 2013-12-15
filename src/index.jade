@@ -1,16 +1,54 @@
 include html/jade-helpers.jade
 !!! 5
 head
-  title title
-  meta(name="description", content="description")
-  include html/head.jade
+	title zapo.tech
+	meta(name="description", content="zapo.tech, a digital development studio")
+	include html/head.jade
 
-body#homepage
-  a(href="#main", class="assistive-text") Skip to main content
-  div.container
+body#home
+	a(href="#main", class="assistive-text") Skip to main content
+	div.container
+		header#global-header
+			hgroup
+				h1#site zapo.tech
+				h2#tagline a digital development agency
 
-    section#main
-      h2.t4 hello
+		section#main
+			article#intro
+				h2 the web is a digital medium still maturing.
+				p what started out as simple, static text files has evolved into fully immersive, reactive experiences.
+				p a desktop-only landscape has since been flooded with smartphones, tablets, and gaming consoles that have introduced new features and capabilities such as touch and retina displays.
+				h3 understanding and adapting to the digital medium will be the key to success in the future.
+				p what was social media to a business 5 years ago? 
+				p the success of a website it is no longer enough to simply write valid HTML, CSS, and JS. in order to be known online you must have a social media presence
+				| best practices could change with the introduction of a new language or technology.
+			article#work
+				h2 previous work
+				p worked at UNICEF Kosovo Innovations Lab.
+				//- projects
+				ul
+					li learning landscape
+					li NY Markets
+					li Polict.us
 
-  include html/foot.jade
+			article#background
+				h2 technology can serve any purpose we need.
+				p from entertainment to life-saving
+				p i know because i've grown up in it. from my first gaming console (N64) to our first computer (running Windows ME), i've seen the joy and frustration that both can create (joy: beating Donkey Kong 64, frustration: the Blue Screen of Death). gaming consoles, 3D, story-telling (movies, tv shows), ipods, iphones, apps, laptops, raspberry pis, arduino
+				p studying New Media Development at RIT threw me into a world of programming and attention to design that i had never been aware of. it was there that i became aware that we are in a time where are imagition is our only limiting factor.
+				p technology can be used in more ways than we usually imagine.
+				p how do we enrich our physical experience without resorting to a completely digital solution.
+
+
+			article#connect
+				p let's work together and give your company an effective base to work off of.
+				p guilty pleasure: support marijuana legalization in NY
+
+				p we are still at the beginning of a technological rennaissance. digital renaissance?
+				p we will see our world more connected than ever before.
+				| the web is just the beginning.
+
+
+
+	//- include html/foot.jade
 </html>
