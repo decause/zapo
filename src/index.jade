@@ -20,34 +20,46 @@ body#zapo
 				p a landscape dominated by desktops has since been flooded with smartphones, tablets,
 					| and gaming consoles that access the web with extra features and capabilities such as touch, gesture, and retina displays.
 				h3 adapting to this new medium as it develops is key.
-				p one must continue to learn and embrace the best emerging technologies.
-					| we understand that the success of a website
-					| is dependant on much more than simply writing valid HTML, CSS, and JavaScript.
-				h3 we strive to produce the best quality work that is accessible where you need it to be, everywhere.
+				//- p one must continue to learn and embrace the best emerging technologies.
+				//- 	| we understand that the success of a website
+				//- 	| is dependant on much more than simply writing valid HTML, CSS, and JavaScript.
+				//- h3 we strive to produce the best quality work that is accessible where you need it to be, everywhere.
 				p let's work together and build the website you deserve.
-				form(action="#", method="post")
-					textarea(rows="8", placeholder="looking forward to meeting you")
-					br
+				form#contact-form(action="#", method="post")
+					p
+						label
+							span name
+							input(type="text")
+					p
+						label
+							span email
+							input(type="email")
+					p
+						label
+							span message
+							textarea(rows="8", placeholder="")
 					input(type="submit", value="send")
 			section#work
 				h2 previous work
 				ul#projects
-					li 
-						h3.client hennessy
-						p.project-background multi-video player for the Nas page
-						p.role front-end development
-						a(href="http://www.hennessy.com/us/wild-rabbit/nas/", target="_blank") live link
+					li
+						article.project-info
+							h3.client hennessy
+							p.project-background multi-video player for the Nas page
+							p.role front-end development
+							a(href="http://www.hennessy.com/us/wild-rabbit/nas/", target="_blank") live link
 						figure
 							img(src="img/portfolio/hennessy-nas-1.png", alt="description", height="332", width="576")
 						figure
 							img(src="img/portfolio/hennessy-nas-2.png", alt="description", height="166", width="288")
 						figure
 							img(src="img/portfolio/hennessy-nas-3.png", alt="description", height="166", width="288")
-					li 
-						h3.client audermars piguet
-						p.project-background new press section
-						p.role front-end development
-						a(href="http://www.audemarspiguet.com/en/press", target="_blank") live link
+					li
+						article.project-info 
+							h3.client audermars piguet
+							p.project-background new press section
+							p.role front-end development
+							a(href="http://www.audemarspiguet.com/en/press", target="_blank") live link
 						figure
 							img(src="img/portfolio/ap-press-1.png", alt="description", height="332", width="576")
 						figure
@@ -55,10 +67,11 @@ body#zapo
 						figure
 							img(src="img/portfolio/ap-press-3.png", alt="description", height="166", width="288")
 					li
-						h3.client learning landscape
-						p.project-background website for an educational game using Minecraft
-						p.role design and development
-						a(href="http://kazooroo.net/knowledgecraftprojects/learninglandscape/", target="_blank") live link
+						article.project-info
+							h3.client learning landscape
+							p.project-background website for an educational game using Minecraft
+							p.role design and development
+							a(href="http://kazooroo.net/knowledgecraftprojects/learninglandscape/", target="_blank") live link
 						figure
 							img(src="img/portfolio/learning-landscape-1.png", alt="description", height="332", width="576")
 						figure
@@ -66,40 +79,20 @@ body#zapo
 						figure
 							img(src="img/portfolio/learning-landscape-3.png", alt="description", height="166", width="288")
 					li
-						h3.client sticky-waffle
-						p.project-background a synth-visualizer in the browser
-						p.role design and development
-						a(href="http://people.rit.edu/~ler2604/432/sticky-waffle/", target="_blank") live link
+						article.project-info
+							h3.client sticky-waffle
+							p.project-background a synth-visualizer in the browser
+							p.role design and development
+							a(href="http://people.rit.edu/~ler2604/432/sticky-waffle/", target="_blank") live link
 						figure
 							img(src="img/portfolio/sticky-waffle-1.png", alt="description", height="332", width="576")
 						figure
 							img(src="img/portfolio/sticky-waffle-2.png", alt="description", height="166", width="288")
 						figure
 							img(src="img/portfolio/sticky-waffle-3.png", alt="description", height="166", width="288")
-					//- li NY Markets
-					//- li Polict.us
-
-			//- article#background
-			//- 	h2 technology can serve any purpose we need.
-			//- 	p from entertainment to life-saving
-			//- 	p i know because i've grown up in it. from my first gaming console (N64) to our first computer (running Windows ME), i've seen the joy and frustration that both can create (joy: beating Donkey Kong 64, frustration: the Blue Screen of Death). gaming consoles, 3D, story-telling (movies, tv shows), ipods, iphones, apps, laptops, raspberry pis, arduino
-			//- 	p studying New Media Development at RIT threw me into a world of programming and attention to design that i had never been aware of. it was there that i became aware that we are in a time where are imagition is our only limiting factor.
-			//- 	p technology can be used in more ways than we usually imagine.
-			//- 	p how do we enrich our physical experience without resorting to a completely digital solution.
-
-			//- 	p guilty pleasure: support marijuana legalization in NY
-
-			//- 	p we are still at the beginning of a technological rennaissance. digital renaissance?
-			//- 	p we will see our world more connected than ever before.
-			//- 		| the web is just the beginning.
-			//- p worked at UNICEF Kosovo Innovations Lab.
-
-
+ 
 		footer#global-footer
 			p#legal zapotech &copy; 2013
-
-
-
 
 	//- include html/foot.jade
 </html>

@@ -6,9 +6,43 @@
 @import "pieces/base";
 @import "pieces/typography";
 
-// icon set
-// @import "font-awesome/font-awesome";
+#global-header {
+	padding: 5% 10%;
+}
 
-body {
-  background: tomato;
+#manifesto {
+	background: tomato;
+	padding: 5% 10%;
+}
+
+
+// contact
+#contact-form {
+	span {
+		display: block;
+	}
+}
+
+
+// projects
+#projects {
+	li {
+		// display: inline-block;
+	}
+}
+#work {
+	h2 {
+		padding: 5% 10%;
+	}
+}
+.project-info {
+	padding: 5% 10%;	
+}
+#global-footer {
+	padding: 5% 10%;
+	background: $black;
+	color: $white;
+	p {
+		margin: 0;
+	}
 }
