@@ -6,43 +6,22 @@
 @import "pieces/base";
 @import "pieces/typography";
 
-#global-header {
-	padding: 5% 10%;
-}
-
-#manifesto {
-	background: tomato;
-	padding: 5% 10%;
-}
-
-
-// contact
-#contact-form {
-	span {
-		display: block;
+// site styles
+#zapo {
+	// background: darken($black, 5%);
+	background: url('https://s3.amazonaws.com/static.tumblr.com/8fa360668e7236c2de56d9789a6148b8/a5s1ijm/v74mgvroo/tumblr_static_imag1903.jpg');
+	color: darken($white, 20%);
+	background-size: cover;
+	a {
+		color: #b92d19;
 	}
 }
+.container {
+	background:rgba(2,2,2,0.8);
+}
 
-
-// projects
-#projects {
-	li {
-		// display: inline-block;
-	}
-}
-#work {
-	h2 {
-		padding: 5% 10%;
-	}
-}
-.project-info {
-	padding: 5% 10%;	
-}
-#global-footer {
-	padding: 5% 10%;
-	background: $black;
-	color: $white;
-	p {
-		margin: 0;
-	}
-}
+@import "theme/header";
+@import "theme/footer";
+@import "theme/projects";
+@import "theme/manifesto";
+@import "theme/contact";

@@ -1,0 +1,15 @@
+@import "../pieces/vars";
+@import "../pieces/mixins";
+
+#global-footer {
+	padding: 0.25rem 10%;
+	// background: darken($black, 50%);
+	background: darken(#b92d19, 20%);
+	color: $white;
+	@include cf();
+	p {
+		float: right;
+		margin: 0;
+		@include rems(font-size, 0.75em);
+	}
+}

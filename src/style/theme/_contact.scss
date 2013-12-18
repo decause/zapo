@@ -1,0 +1,36 @@
+@import "../pieces/vars";
+@import "../pieces/mixins";
+
+#contact {
+	padding: 5% 10%;
+	// @include flex(1);
+	h2 {
+		font-size: 1rem;
+		color: $white;
+		font-weight: normal;
+	}
+	p {
+		line-height: 1.4;
+	}
+}
+#contact-form {
+	span {
+		display: block;
+		font-size: 0.875rem;
+		letter-spacing: 1px;
+	}
+	input[type="text"], input[type="email"] {
+		// height: 2.25rem;
+	}
+	input[type="text"], input[type="email"], textarea {
+		width: 100%;
+		@include px(max-width, 250px);
+		border-radius: 5px;
+		padding: 0.25em 0.5rem;
+		font-size: 0.875rem;
+	}
+	input[type="submit"] {
+		padding: 2% 3%;
+		font-size: 0.875rem;		
+	}
+}

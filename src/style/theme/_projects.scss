@@ -1,0 +1,30 @@
+@import "../pieces/vars";
+@import "../pieces/mixins";
+
+#projects {
+	img {
+		display: block;
+	}
+}
+#work {
+	h2 {
+		padding: 1rem 10%;
+	}
+}
+.project-info {
+	padding: 1rem 10%;
+}
+.project-background{
+	color: $white;
+	&:before {
+		content: "project: ";
+		color: darken($white, 20%);
+	}
+}
+.role{
+	color: $white;
+	&:before {
+		content: "role: ";
+		color: darken($white, 20%);
+	}
+}
