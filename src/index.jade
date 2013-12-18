@@ -10,21 +10,29 @@ body#zapo
 	div.container
 		header#global-header
 			hgroup
-				h1#site ZAPOTECH
+				h1#site
+					a(href="#") zapotech
 				h2#tagline a digital development agency
+			nav#global-nav
+				ul
+					li
+						a(href="#") about
+					li
+						a(href="#") contact
+					li
+						a(href="#") work
 
 		section#main
 			article#manifesto
 				h2 the web is a digital medium still maturing.
-				p what started out as simple, static text files has evolved into fully immersive, reactive experiences.
+				p#preface what started out as simple, static text files has evolved into fully immersive, reactive experiences.
 				p a landscape dominated by desktops has since been flooded with smartphones, tablets,
-					| and gaming consoles that access the web with extra features and capabilities such as touch, gesture, and retina displays.
+					| and gaming consoles that access the web with extra features and capabilities
+					| such as touch, geolocation, and retina displays.
 				h3 adapting to this new medium as it develops is key.
-				//- p one must continue to learn and embrace the best emerging technologies.
-				//- 	| we understand that the success of a website
-				//- 	| is dependant on much more than simply writing valid HTML, CSS, and JavaScript.
-				//- h3 we strive to produce the best quality work that is accessible where you need it to be, everywhere.
-				p let's work together and build the website you deserve.
+				p <a href="#">learn more about our process</a> or get <a href="#">in touch</a>.
+			section#contact
+				h2 let's work together and build something great
 				form#contact-form(action="#", method="post")
 					p
 						label
@@ -39,7 +47,7 @@ body#zapo
 							span message
 							textarea(rows="8", placeholder="")
 					input(type="submit", value="send")
-			section#work
+			//- section#work
 				h2 previous work
 				ul#projects
 					li
