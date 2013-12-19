@@ -31,6 +31,14 @@
 	}
 	input[type="submit"] {
 		padding: 2% 3%;
-		font-size: 0.875rem;		
+		font-size: 0.875rem;
+		// position: relative;
+		// &:after {
+		// 	content: "\00a0";
+		// 	position: absolute;
+		// 	background: tomato;
+		// 	top: 0; left: 0;
+		// 	width: 100%;
+		// }
 	}
 }

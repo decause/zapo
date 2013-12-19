@@ -6,14 +6,24 @@
 @import "pieces/base";
 @import "pieces/typography";
 
+html, #zapo, .container {
+	@include mq(tablet) {
+		height: 100%;
+	}
+}
+
 // site styles
 #zapo {
 	// background: darken($black, 5%);
-	background: url('https://s3.amazonaws.com/static.tumblr.com/8fa360668e7236c2de56d9789a6148b8/a5s1ijm/v74mgvroo/tumblr_static_imag1903.jpg');
+	background: url('../img/bkgd/1903-1x.jpg');
 	color: darken($white, 20%);
 	background-size: cover;
 	a {
-		color: #b92d19;
+		color: $red;
+		@include transition(color, 0.1s);
+		&:hover {
+			color: lighten($red, 10%);
+		}
 	}
 }
 .container {

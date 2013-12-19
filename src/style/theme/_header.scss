@@ -5,6 +5,7 @@
 	padding: 1rem 10%;
 	hgroup {
 		line-height: 1;
+		margin-bottom: 1rem;
 	}
 	h1, h2 {
 		margin-bottom: 0;
@@ -27,8 +28,11 @@
 }
 
 #global-nav {
+	@include cf();
 	li {
 		display: inline-block;
+		float: left;
+		margin-right: 1rem;
 	}
 	a {
 		text-decoration: none;

@@ -2,9 +2,11 @@
 @import "../pieces/mixins";
 
 #manifesto {
-	padding: 5% 10%;
-	max-width: 40rem;
-	// @include flex(2);
+	padding: 5% 10% 20%;
+	max-width: 35rem;
+	@include mq(netbook) {
+		padding: 5% 0 5% 10%;
+	}
 	h2 {
 		padding-bottom: 0.5rem;
 		border-bottom: 1px solid $white;
@@ -12,8 +14,10 @@
 	}
 	h3 {
 		font-size: 1rem;
+		line-height: 1.4;
+		color: darken($white, 2%);
 	}
-	h2, h3 {
+	h2 {
 		color: darken($white, 3%);
 	}
 	p {line-height: 1.6;}

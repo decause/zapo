@@ -26,12 +26,12 @@ body#zapo
 			article#manifesto
 				h2 the web is a digital medium still maturing.
 				p#preface what started out as simple, static text files has evolved into fully immersive, reactive experiences.
-				p a landscape dominated by desktops has since been flooded with smartphones, tablets,
+				//- p a landscape dominated by desktops has since been flooded with smartphones, tablets,
 					| and gaming consoles that access the web with extra features and capabilities
 					| such as touch, geolocation, and retina displays.
 				h3 adapting to this new medium as it develops is key.
-				p <a href="#">learn more about our process</a> or get <a href="#">in touch</a>.
-			section#contact
+				p learn more <a href="#">about our process</a>, get <a href="#">in touch</a>, or view our <a href="#">previous work</a>.
+			//- section#contact
 				h2 let's work together and build something great
 				form#contact-form(action="#", method="post")
 					p
@@ -100,7 +100,11 @@ body#zapo
 							img(src="img/portfolio/sticky-waffle-3.png", alt="description", height="166", width="288")
  
 		footer#global-footer
+			ul#contact-info
+				//- li hello@zapo.tc
+				//- li 585-520-2068
+				li albion, new york
 			p#legal zapotech &copy; 2013
 
-	//- include html/foot.jade
+	include html/foot.jade
 </html>

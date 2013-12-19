@@ -3,13 +3,29 @@
 
 #global-footer {
 	padding: 0.25rem 10%;
-	// background: darken($black, 50%);
-	background: darken(#b92d19, 20%);
+	background: darken($red, 20%);
 	color: $white;
-	@include cf();
-	p {
-		float: right;
-		margin: 0;
-		@include rems(font-size, 0.75em);
+	font-size: 0.75rem;
+	@include flexbox();
+	// @include mq(tablet) {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+	// }
+}
+
+#contact-info {
+	@include flex(1);
+	li {
+		list-style: none;
+		margin-right: 0.875rem;
+		@include mq(netbook) {
+			display: inline-block;			
+		}
 	}
+}
+#legal {
+	@include flex(1);
+	margin: 0;
+	text-align: right;
 }
