@@ -2,11 +2,8 @@
 @import "../pieces/mixins";
 
 #manifesto {
-	padding: 5% 10% 20%;
-	max-width: 35rem;
-	@include mq(netbook) {
-		padding: 5% 0 5% 10%;
-	}
+	margin: 0 10% 10%;
+	max-width: 30rem;
 	h2 {
 		padding-bottom: 0.5rem;
 		border-bottom: 1px solid $white;
@@ -17,12 +14,11 @@
 		line-height: 1.4;
 		color: darken($white, 2%);
 	}
-	h2 {
-		color: darken($white, 3%);
-	}
-	p {line-height: 1.6;}
-	a {
-		text-decoration: none;
+	h2 {color: darken($white, 3%);}
+	a {text-decoration: none;}
+	p {
+		line-height: 1.6;
+		&:last-child {max-width: 28rem;}
 	}
 }
 #preface {

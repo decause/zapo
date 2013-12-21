@@ -1,39 +1,18 @@
-include html/jade-helpers.jade
+include ../html/jade-helpers.jade
 !!! 5
 head
-	title zapotech // digital development
-	meta(name="description", content="zapotech // a digital development agency - based in albion, new york")
-	include html/head.jade
+	title contact zapotech
+	meta(name="description", content="contact zapotech // a digital development agency - based in albion, new york")
+	include ../html/head.jade
 
 body#zapo
 	a(href="#main", class="assistive-text") Skip to main content
 	div.container
-		include html/theme/global-header.jade
+		include ../html/theme/global-header.jade
 
 		section#main
-			article#manifesto
-				h2 the web is a digital medium still maturing.
-				p#preface what started out as simple, static text files has evolved into fully immersive, reactive experiences.
-				h3 adapting to this new medium as it develops is key.
-				p learn more <a href="about.html">about our process</a>, get <a href="contact.html">in touch</a>, or view our <a href="work.html">previous work</a>.
-			//- section#contact
-				h2 let's work together and build something great
-				form#contact-form(action="#", method="post")
-					p
-						label
-							span name
-							input(type="text")
-					p
-						label
-							span email
-							input(type="email")
-					p
-						label
-							span message
-							textarea(rows="8", placeholder="")
-					input(type="submit", value="send")
 			section#work
-				//- h2 previous work
+				h2 previous work
 				ul#projects
 					li
 						article.project-info
@@ -41,34 +20,51 @@ body#zapo
 							p.project-background multi-video player for the Nas page
 							p.project-role front-end development
 							a.project-link(href="http://www.hennessy.com/us/wild-rabbit/nas/", target="_blank") live link
-						figure.project-screenshot
+						figure
 							img(src="img/portfolio/hennessy-nas-1-1x.jpg", alt="description", height="332", width="576").jpg
+						figure
+							img(src="img/portfolio/hennessy-nas-2-1x.jpg", alt="description", height="166", width="288").jpg
+						figure
+							img(src="img/portfolio/hennessy-nas-3-1x.jpg", alt="description", height="166", width="288").jpg
 					li
 						article.project-info 
 							h3.client audermars piguet
 							p.project-background new press section
 							p.project-role front-end development
 							a.project-link(href="http://www.audemarspiguet.com/en/press", target="_blank") live link
-						figure.project-screenshot
+						figure
 							img(src="img/portfolio/ap-press-1-1x.jpg", alt="description", height="332", width="576").jpg
+						figure
+							img(src="img/portfolio/ap-press-2-1x.jpg", alt="description", height="166", width="288").jpg
+						figure
+							img(src="img/portfolio/ap-press-3-1x.jpg", alt="description", height="166", width="288").jpg
 					li
 						article.project-info
 							h3.client learning landscape
-							p.project-background website for an educational game built for Minecraft
+							p.project-background website for an educational game using Minecraft
 							p.project-role design and development
 							a.project-link(href="http://kazooroo.net/knowledgecraftprojects/learninglandscape/", target="_blank") live link
-						figure.project-screenshot
+						figure
 							img(src="img/portfolio/learning-landscape-1-1x.jpg", alt="description", height="332", width="576").jpg
+						figure
+							img(src="img/portfolio/learning-landscape-2-1x.jpg", alt="description", height="166", width="288").jpg
+						figure
+							img(src="img/portfolio/learning-landscape-3-1x.jpg", alt="description", height="166", width="288").jpg
 					li
 						article.project-info
 							h3.client sticky-waffle
 							p.project-background a synth-visualizer in the browser
 							p.project-role design and development
 							a.project-link(href="http://people.rit.edu/~ler2604/432/sticky-waffle/", target="_blank") live link
-						figure.project-screenshot
+						figure
 							img(src="img/portfolio/sticky-waffle-1-1x.jpg", alt="description", height="332", width="576").jpg
- 
-		include html/theme/global-footer.jade
+						figure
+							img(src="img/portfolio/sticky-waffle-2-1x.jpg", alt="description", height="166", width="288").jpg
+						figure
+							img(src="img/portfolio/sticky-waffle-3-1x.jpg", alt="description", height="166", width="288").jpg
 
-	include html/foot.jade
+				
+		include ../html/theme/global-footer.jade
+
+	include ../html/foot.jade
 </html>

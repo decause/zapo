@@ -6,26 +6,17 @@
 	background: darken($red, 20%);
 	color: $white;
 	font-size: 0.75rem;
-	@include flexbox();
-	// @include mq(tablet) {
-		position: fixed;
-		width: 100%;
-		bottom: 0;
-	// }
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	@include flexbox();	
+	p {margin: 0;}
 }
 
-#contact-info {
+#home {
 	@include flex(1);
-	li {
-		list-style: none;
-		margin-right: 0.875rem;
-		@include mq(netbook) {
-			display: inline-block;			
-		}
-	}
 }
 #legal {
 	@include flex(1);
-	margin: 0;
 	text-align: right;
 }

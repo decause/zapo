@@ -14,7 +14,7 @@ html, #zapo, .container {
 
 // site styles
 #zapo {
-	// background: darken($black, 5%);
+	background: darken($black, 5%);
 	background: url('../img/bkgd/1903-1x.jpg');
 	color: darken($white, 20%);
 	background-size: cover;
@@ -26,10 +26,16 @@ html, #zapo, .container {
 		}
 	}
 }
-.container {
+#main, #global-header {
 	background:rgba(2,2,2,0.8);
 }
-
+#main {
+	padding-top: 5%;
+	@include transition(padding-top, 0.3s);
+	@include mq(netbook) {
+		padding-top: 10%;
+	}
+}
 @import "theme/header";
 @import "theme/footer";
 @import "theme/projects";
