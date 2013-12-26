@@ -25,6 +25,9 @@
 #tagline {
 	font-size: 0.875rem;
 	display: inline-block;
+	&:before {
+		content: "// ";
+	}
 }
 
 #global-nav {
@@ -32,9 +35,24 @@
 	li {
 		display: inline-block;
 		float: left;
-		margin-right: 1rem;
+		margin-right: 2rem;
 	}
 	a {
 		text-decoration: none;
+		position: relative;
+		&:before {
+			content: "/ ";
+			position: absolute;
+			left: -0.5rem;
+			opacity: 0;
+			@include transition(opacity, 0.3s);
+		}
+		&.current:before {
+			content: "// ";
+			left: -0.875rem;
+		}
+		&:hover:before, &.current:before {
+			opacity: 1;
+		}
 	}
 }

@@ -25,6 +25,9 @@ html, #zapo, .container {
 			color: lighten($red, 10%);
 		}
 	}
+	&.highres {
+		background: url('../img/bkgd/1903-2x.jpg');
+	}
 }
 #main, #global-header {
 	background:rgba(2,2,2,0.8);
@@ -41,3 +44,18 @@ html, #zapo, .container {
 @import "theme/projects";
 @import "theme/manifesto";
 @import "theme/contact";
+
+#background, #services, #founded {
+	margin: 0 10%;
+	p, li {
+		line-height: 1.4;
+		max-width: 30rem;
+	}
+	ul {
+		margin-bottom: 1.5rem;
+	}
+}
+#founded {
+	padding-bottom: 1.5rem;
+	margin-bottom: 1rem;
+}

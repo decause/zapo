@@ -2,14 +2,14 @@
 @import "../pieces/mixins";
 
 #work {
-	color: darken($white, 50%);
-	@include transition(color, 0.3s);
-	&:hover {color: darken($white, 40%);}
 	h2 {
 		font-size: 1rem;
 		margin: 0 10%;
 	}
-	padding-bottom: 0.875rem;
+	padding-bottom: 1.25rem;
+	@include mq(netbook) {color: darken($white, 50%);}
+	@include transition(color, 0.3s);
+	&:hover {color: darken($white, 40%);}
 }
 #projects {
 	@include cf();
@@ -19,22 +19,17 @@
 		float: left;
 		width: 100%;
 		@include transition(width, 0.3s);
+		@include transition(color, 0.3s);
 		@include mq(netbook) {
 			width: 50%;
+			&:hover {
+				color: $white;
+				.project-screenshot:after {
+					background: rgba(0,0,0,0.5);
+				}
+			}		
 		}
-		@include mq(desktop) {
-			width: 25%;
-		}
-		@include transition(color, 0.3s);
-		&:hover {
-			color: $white;
-			.project-screenshot:after {
-				background: rgba(0,0,0,0.5);
-			}
-		}
-		.touch + & {
-			color: $white;
-		}
+		@include mq(desktop) {width: 25%;}
 	}
 }
 // ===================================
@@ -43,20 +38,21 @@
 	@include px(min-height, 140px);
 	p {margin: 0.5rem 0;}
 }
-.project-link {
-	text-decoration: none;
-}
+.project-role {font-style: italic;}
+.project-link {text-decoration: none;}
 .project-screenshot {
 	position: relative;
-	&:after {
-		content: "\00a0";
-		position: absolute;
-		top: 0; bottom: 0;
-		width: 100%;
-		background: rgba(0,0,0, 0.8);
-		@include transition(background, 0.3s);
-	}
-	&:hover:after, .touch + & {
-		background: rgba(0,0,0, 0.2) !important;
+	@include mq(netbook) {
+		&:after {
+			content: "\00a0";
+			position: absolute;
+			top: 0; bottom: 0;
+			width: 100%;
+			background: rgba(0,0,0, 0.8);
+			@include transition(background, 0.3s);
+		}
+		&:hover:after {
+			background: rgba(0,0,0, 0.2) !important;
+		}
 	}
 }
