@@ -3,16 +3,23 @@
 
 #contact {
 	padding: 5% 10%;
-	// @include flex(1);
-	h2 {
-		font-size: 1rem;
-		color: $white;
-		font-weight: normal;
-	}
 	p {
 		line-height: 1.4;
-	}
+		}
 }
+
+#contact-info {
+	list-style: none;
+	margin-bottom: 3rem;
+	li {
+		margin-bottom: 0.25rem;
+		color: $red;
+		&:first-child {
+			font-size: 1.5rem;
+			}
+		}
+}
+
 #contact-form {
 	span {
 		display: block;
@@ -40,5 +47,13 @@
 		// 	top: 0; left: 0;
 		// 	width: 100%;
 		// }
+	}
+}
+
+
+#services {
+	margin: 5% 10%;
+	@include mq(netbook) {
+		margin: 0 10%;
 	}
 }

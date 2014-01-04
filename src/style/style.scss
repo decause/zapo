@@ -5,6 +5,7 @@
 @import "pieces/classes";
 @import "pieces/base";
 @import "pieces/typography";
+@import "pieces/swipe";
 
 .columns-2 {
 	@include mq(netbook) {
