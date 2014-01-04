@@ -1,0 +1,22 @@
+include ../html/jade-helpers.jade
+!!! 5
+head
+	title about / zapotech
+	meta(name="description", content="about / zapotech // a digital development agency - based in albion, new york")
+	include ../html/head.jade
+
+body#zapo(data-page="about")
+	a(href="#main", class="assistive-text") Skip to main content
+	div.container
+		include ../html/theme/global-header.jade
+
+		div#main
+			article#background
+				h2 404
+				p Whoops. Looks like something went wrong
+
+
+		include ../html/theme/global-footer.jade
+
+	include ../html/foot.jade
+</html>
