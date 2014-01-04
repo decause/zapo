@@ -16,9 +16,10 @@ zapo.main = (function() {
 
 	var nav = function() {
 		var page = $('#zapo').attr('data-page');
-		// console.log(page);
+
+		if (page === 'index') {$('html').addClass('full-height')}
+
 		$('#global-nav li a').each(function(i, el) {
-			// console.log(el);
 			if (el.innerHTML === page) {
 				$(el).addClass('current');
 			}
@@ -42,9 +43,6 @@ zapo.images = (function() {
 	var highres = function(img) {
 		var src = img['src'];
 		string = src.split('1x');
-		// var newSrc = string[0] +'2x'+ string[1];
-		// do it up
-		// img['src'] = newSrc;
 		img['src'] = string[0]+'2x'+string[1];
 	}
 
