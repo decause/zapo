@@ -12,7 +12,7 @@ body#zapo(data-page="work")
 
 		div#main
 			section#work
-				h2 previous work
+				h2.t4 previous work
 				ul#projects
 					li
 						article.project-info
@@ -20,49 +20,72 @@ body#zapo(data-page="work")
 							p.project-background multi-video player for the Nas page
 							p.project-role front-end development
 							a.project-link(href="http://www.hennessy.com/us/wild-rabbit/nas/", target="_blank") live link
-						figure
-							img(src="img/portfolio/hennessy-nas-1-1x.jpg", alt="description", height="332", width="576").jpg
-						figure
-							img(src="img/portfolio/hennessy-nas-2-1x.jpg", alt="description", height="166", width="288").jpg
-						figure
-							img(src="img/portfolio/hennessy-nas-3-1x.jpg", alt="description", height="166", width="288").jpg
+						div.swipe.screenshots
+							div.swipe-wrap
+								figure
+									img(src="img/portfolio/hennessy-nas-1-1x.jpg", alt="description", height="332", width="576").jpg
+								figure
+									img(src="img/portfolio/hennessy-nas-2-1x.jpg", alt="description", height="166", width="288").jpg
+								figure
+									img(src="img/portfolio/hennessy-nas-3-1x.jpg", alt="description", height="166", width="288").jpg
+							//- controls
+							div.screenshot-controls
+								span.prev prev
+								span.next next
 					li
 						article.project-info 
 							h3.client audermars piguet
 							p.project-background new press section
 							p.project-role front-end development
 							a.project-link(href="http://www.audemarspiguet.com/en/press", target="_blank") live link
-						figure
-							img(src="img/portfolio/ap-press-1-1x.jpg", alt="description", height="332", width="576").jpg
-						figure
-							img(src="img/portfolio/ap-press-2-1x.jpg", alt="description", height="166", width="288").jpg
-						figure
-							img(src="img/portfolio/ap-press-3-1x.jpg", alt="description", height="166", width="288").jpg
+						div.swipe.screenshots
+							div.swipe-wrap						
+								figure
+									img(src="img/portfolio/ap-press-1-1x.jpg", alt="description", height="332", width="576").jpg
+								figure
+									img(src="img/portfolio/ap-press-2-1x.jpg", alt="description", height="166", width="288").jpg
+								figure
+									img(src="img/portfolio/ap-press-3-1x.jpg", alt="description", height="166", width="288").jpg
+							//- controls
+							div.screenshot-controls
+								span.prev prev
+								span.next next					
 					li
 						article.project-info
 							h3.client learning landscape
 							p.project-background website for an educational game using Minecraft
 							p.project-role design and development
 							a.project-link(href="http://kazooroo.net/knowledgecraftprojects/learninglandscape/", target="_blank") live link
-						figure
-							img(src="img/portfolio/learning-landscape-1-1x.jpg", alt="description", height="332", width="576").jpg
-						figure
-							img(src="img/portfolio/learning-landscape-2-1x.jpg", alt="description", height="166", width="288").jpg
-						figure
-							img(src="img/portfolio/learning-landscape-3-1x.jpg", alt="description", height="166", width="288").jpg
+						div.swipe.screenshots
+							div.swipe-wrap						
+								figure
+									img(src="img/portfolio/learning-landscape-1-1x.jpg", alt="description", height="332", width="576").jpg
+								figure
+									img(src="img/portfolio/learning-landscape-2-1x.jpg", alt="description", height="166", width="288").jpg
+								figure
+									img(src="img/portfolio/learning-landscape-3-1x.jpg", alt="description", height="166", width="288").jpg
+							//- controls
+							div.screenshot-controls
+								span.prev prev
+								span.next next					
 					li
 						article.project-info
 							h3.client sticky-waffle
 							p.project-background a synth-visualizer in the browser
 							p.project-role design and development
 							a.project-link(href="http://people.rit.edu/~ler2604/432/sticky-waffle/", target="_blank") live link
-						figure
-							img(src="img/portfolio/sticky-waffle-1-1x.jpg", alt="description", height="332", width="576").jpg
-						figure
-							img(src="img/portfolio/sticky-waffle-2-1x.jpg", alt="description", height="166", width="288").jpg
-						figure
-							img(src="img/portfolio/sticky-waffle-3-1x.jpg", alt="description", height="166", width="288").jpg
-
+						div.swipe.screenshots
+							div.swipe-wrap						
+								figure
+									img(src="img/portfolio/sticky-waffle-1-1x.jpg", alt="description", height="332", width="576").jpg
+								figure
+									img(src="img/portfolio/sticky-waffle-2-1x.jpg", alt="description", height="166", width="288").jpg
+								figure
+									img(src="img/portfolio/sticky-waffle-3-1x.jpg", alt="description", height="166", width="288").jpg
+							//- controls
+							div.screenshot-controls
+								span.prev prev
+								span.next next
 			section#process
 				h2 process
 
@@ -72,4 +95,5 @@ body#zapo(data-page="work")
 		include ../html/theme/global-footer.jade
 
 	include ../html/foot.jade
+	script(src="js/libs/swipe.js")
 </html>

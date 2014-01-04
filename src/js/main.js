@@ -17,8 +17,16 @@ zapo.main = (function() {
 	var nav = function() {
 		var page = $('#zapo').attr('data-page');
 
+		// page specfic things
 		if (page === 'index') {$('html').addClass('full-height')}
+		
+		if (page === 'work') {
+			$('.swipe').each(function(i, el) {
+				window.mySwipe = $(el).Swipe().data('Swipe');
+			});
+		}
 
+		// updating nav
 		$('#global-nav li a').each(function(i, el) {
 			if (el.innerHTML === page) {
 				$(el).addClass('current');
