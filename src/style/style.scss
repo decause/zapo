@@ -6,56 +6,50 @@
 @import "pieces/base";
 @import "pieces/typography";
 
-html, #zapo, .container {
-	@include mq(tablet) {
-		height: 100%;
+.columns-2 {
+	@include mq(netbook) {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
 	}
 }
 
+
+.full-height, #zapo, .container {
+	height: 100%;
+	// @include mq(tablet) {
+		// height: auto;
+		// }
+}
+
+
 // site styles
+a {
+	color: $red;
+	@include transition(color, 0.1s);
+	&:hover {color: lighten($red, 10%);}
+	}
 #zapo {
 	background: darken($black, 5%);
 	background: url('../img/bkgd/1903-1x.jpg');
 	color: darken($white, 20%);
 	background-size: cover;
-	a {
-		color: $red;
-		@include transition(color, 0.1s);
-		&:hover {
-			color: lighten($red, 10%);
-		}
-	}
 	&.highres {
 		background: url('../img/bkgd/1903-2x.jpg');
-	}
-}
-#main, #global-header {
-	background:rgba(2,2,2,0.8);
+		background-size: cover;
+		}
+	.container {background:rgba(2,2,2,0.8);}
 }
 #main {
-	padding-top: 5%;
-	@include transition(padding-top, 0.3s);
+	padding: 5% 0 10%;
+	@include transition(padding, 0.3s);
 	@include mq(netbook) {
-		padding-top: 10%;
-	}
+		padding: 10% 0 5%;
+		}
 }
 @import "theme/header";
 @import "theme/footer";
 @import "theme/projects";
 @import "theme/manifesto";
 @import "theme/contact";
-
-#background, #services, #founded {
-	margin: 0 10%;
-	p, li {
-		line-height: 1.4;
-		max-width: 30rem;
-	}
-	ul {
-		margin-bottom: 1.5rem;
-	}
-}
-#founded {
-	padding-bottom: 1.5rem;
-	margin-bottom: 1rem;
-}
+@import "theme/about";
