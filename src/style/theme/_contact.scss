@@ -2,32 +2,52 @@
 @import "../pieces/mixins";
 
 #contact {
-	padding: 5% 10%;
+	margin: 0 10% 2.5rem;
+	border-bottom: 1px solid $white;
+	.t4 {
+		display: inline-block;
+		padding-right: 5%;
+		}
 	p {
 		line-height: 1.4;
+		max-width: 30rem;
 		}
 }
+.flex {
+	@include flexbox();
+	flex-direction: column;
+	@include mq(netbook) {
+		flex-direction: row;
+		padding-bottom: 2rem;
+	}
+}
 
+#test {
+	@include flex(4);
+	@include mq(netbook) {
+		order: 2;
+		margin-left: 2rem;
+		}
+	@include mq(desktop) {
+		margin-left: 0;
+		}
+}
 #contact-info {
 	list-style: none;
-	margin-bottom: 3rem;
+	margin: 2rem 0 3rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 1;
 	li {
-		margin-bottom: 0.25rem;
-		color: $red;
-		&:first-child {
-			font-size: 1.5rem;
-			}
-		}
+		margin-bottom: 0.25rem;}
 }
 
 #contact-form {
+	@include flex(2);
 	span {
 		display: block;
 		font-size: 0.875rem;
 		letter-spacing: 1px;
-	}
-	input[type="text"], input[type="email"] {
-		// height: 2.25rem;
 	}
 	input[type="text"], input[type="email"], textarea {
 		width: 100%;
@@ -39,21 +59,5 @@
 	input[type="submit"] {
 		padding: 2% 3%;
 		font-size: 0.875rem;
-		// position: relative;
-		// &:after {
-		// 	content: "\00a0";
-		// 	position: absolute;
-		// 	background: tomato;
-		// 	top: 0; left: 0;
-		// 	width: 100%;
-		// }
-	}
-}
-
-
-#services {
-	margin: 5% 10%;
-	@include mq(netbook) {
-		margin: 0 10%;
 	}
 }

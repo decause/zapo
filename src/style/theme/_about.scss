@@ -3,9 +3,24 @@
 
 #background {
 	margin: 0 10%;
+	.t4 {
+		@include mq(netbook) {
+			padding-right: 10%;
+		}
+		@include mq(netbook){
+			padding-right: 35%;
+			}
+		@include mq(desktop){
+			padding-right: 5%;
+			max-width: 45%;
+		}
+		}
 	div {
 		padding: 3% 0 6%;
 		border-bottom: 1px solid $white;
+		@include mq(netbook) {
+			padding: 1% 0 3%;
+			}
 		}
 	p {
 		line-height: 1.4;
@@ -22,15 +37,15 @@
 		img {
 			display: block;
 			margin-bottom: 0.5rem;
+			}
+		@include mq(netbook) {
+			float: right;
 		}
 	}
 	figcaption {
 		font-style: italic;
 		font-size: 0.875rem;
 	}
-}
-#yopablo {
-	max-height: 300px;
 }
 #services, #founded {
 	p, li {
@@ -41,8 +56,17 @@
 }
 #founded {
 	padding-bottom: 1.5rem;
-	margin-top: 1.5rem;
+	margin-top: 0.5rem;
 	margin-bottom: 1rem;
 	color: $white;
 	font-size: 0.875rem;
+	a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 1px dotted darken($white, 35%);
+		@include transition(border-color, 0.3s);
+		&:hover {
+			border-color: darken($white, 10%);
+		}
+	}
 }

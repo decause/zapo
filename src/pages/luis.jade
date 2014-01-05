@@ -1,0 +1,38 @@
+include ../html/jade-helpers.jade
+!!! 5
+head
+	title about / zapotech
+	meta(name="description", content="about / zapotech // a digital development agency - based in albion, new york")
+	include ../html/head.jade
+
+body#zapo(data-page="about")
+	a(href="#main", class="assistive-text") Skip to main content
+	div.container
+		include ../html/theme/global-header.jade
+
+		div#main
+			article#luis
+				h2.t4 hey, my name's luis
+
+				p studying New Media Development at RIT threw me into a world of programming and attention to design that i had never been aware of. it was there that i became aware that we are in a time where are imagition is our only limiting factor.
+				p guilty pleasure: support marijuana legalization in NY
+				p worked at UNICEF Kosovo Innovations Lab.
+				p i know because i've grown up in it. from my first gaming console (N64) to our
+					| first computer (running Windows ME), i've seen the joy and frustration that 
+					| both can create (joy: beating Donkey Kong 64, frustration: the Blue Screen of 
+					| Death). gaming consoles, 3D, story-telling (movies, tv shows), ipods, iphones, 
+					| apps, laptops, raspberry pis, arduino
+
+				figure
+					img(src="img/inspiration/yopablo_rgbd-cinema-4d-singing-test.gif")
+					figcaption Demo of a project by yopablo using a kinect to record 
+						| visual and audio data, then sending it to Cinema 4D to render
+
+				figure
+					img(src="img/inspiration/onionlab_evolucio-2.gif")
+					figcaption Onionlab, a agency in Barcelona showcases their Evolucio project. Projection mapping digital art onto a building
+
+		include ../html/theme/global-footer.jade
+
+	include ../html/foot.jade
+</html>

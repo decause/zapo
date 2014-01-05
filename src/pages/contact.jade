@@ -12,31 +12,33 @@ body#zapo(data-page="contact")
 
 		div#main
 			section#contact
-				h2.t5 let's work together and build something great
-				ul#contact-info
-					li hello@zapo.tc
-					li 585-520-2068
-					li albion, new york
+				h2.t4 let's get in touch
+				div.flex
+					div#test
+						p we'd love to work on your website or any other project you have in mind. no matter the medium, we can help out.
+						ul#contact-info
+							li hello@zapo.tc
+							li 585-520-2068
+							li albion, new york
 
-				form#contact-form(action="#", method="post")
-					h3 Get in touch
-					p
-						label
-							span name
-							input(type="text")
-					p
-						label
-							span email
-							input(type="email")
-					p
-						label
-							span message
-							textarea(rows="8", placeholder="")
-					input(type="submit", value="send")
+					form#contact-form(action="#", method="post")
+						p
+							label
+								span name
+								input(type="text", placeholder="firstname lastname")
+						p
+							label
+								span email
+								input(type="email", placeholder="example@email.com")
+						p
+							label
+								span message
+								textarea(rows="8", placeholder="hello!")
+						input(type="submit", value="send")
 
 
 
-			section#services
+			//- section#services
 				h2.t4 services
 
 				h3 Strategy

@@ -15,12 +15,8 @@
 	}
 }
 
-
 .full-height, #zapo, .container {
 	height: 100%;
-	// @include mq(tablet) {
-		// height: auto;
-		// }
 }
 
 
@@ -50,7 +46,7 @@ a {
 }
 @import "theme/header";
 @import "theme/footer";
-@import "theme/projects";
+@import "theme/work";
 @import "theme/manifesto";
 @import "theme/contact";
 @import "theme/about";
