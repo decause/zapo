@@ -18,11 +18,31 @@ zapo.main = (function() {
 		var page = $('#zapo').attr('data-page');
 
 		// page specfic things
-		if (page === 'index') {$('html').addClass('full-height')}
+		if (page === 'index') {
+			$html = $('html');
+			$html.addClass('full-height');
+			if ($html.height() <= 480) $html.removeClass('full-height');
+		}
 		
 		if (page === 'work') {
+			// new swipe slider is created with name:
+			// swipe-[index]. ex. swipe-0, swipe-1, swipe-2
 			$('.swipe').each(function(i, el) {
-				window.mySwipe = $(el).Swipe().data('Swipe');
+				$el = $(el);
+
+				var newSwipe = 'swipe-'+i;
+				window[newSwipe] = $el.Swipe({
+					auto: Math.floor((Math.random()*5000)+3000)
+				}).data('Swipe'); // auto swipe each at random intervals
+
+				// set next and prev controls
+				$el.find('.prev').on('click', function(e) {
+					window[newSwipe].prev();
+				});
+
+				$el.find('.next').on('click', function(e) {
+					window[newSwipe].next();
+				});
 			});
 		}
 
