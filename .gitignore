@@ -1,3 +1,4 @@
 build/debug
 design/
 src/node_modules
+build/deploy/flask/
