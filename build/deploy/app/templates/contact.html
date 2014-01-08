@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<section id="contact">
+  <h2 class="t4">let's get in touch</h2>
+  <div class="flex">
+    <div id="test">
+      <p>we'd love to work on your website or any other project you have in mind. no matter the medium, we can help out.</p>
+      <ul id="contact-info">
+        <li>hello@zapo.tc</li>
+        <li>585-520-2068</li>
+        <li>albion, new york</li>
+      </ul>
+    </div>
+    <form id="contact-form" action="#" method="post">
+      <p>
+        <label><span>name</span>
+          <input type="text" placeholder="firstname lastname">
+        </label>
+      </p>
+      <p>
+        <label><span>email</span>
+          <input type="email" placeholder="example@email.com">
+        </label>
+      </p>
+      <p>
+        <label><span>message</span>
+          <textarea rows="8" placeholder="hello!"></textarea>
+        </label>
+      </p>
+      <input type="submit" value="send">
+    </form>
+  </div>
+</section>
+{% endblock %}
