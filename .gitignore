@@ -1,4 +1,4 @@
-build/debug
-design/
 src/node_modules
+build/debug
 build/deploy/flask/
+design/
