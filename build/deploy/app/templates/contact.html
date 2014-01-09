@@ -11,20 +11,21 @@
         <li>albion, new york</li>
       </ul>
     </div>
-    <form id="contact-form" action="#" method="post">
+    <form id="contact-form" action="/" method="post">
+      {{ form.hidden_tag() }}
       <p>
         <label><span>name</span>
-          <input type="text" placeholder="firstname lastname">
+          {{ form.name(placeholder='firstname lastname') }}
         </label>
       </p>
       <p>
         <label><span>email</span>
-          <input type="email" placeholder="example@email.com">
+          {{ form.email(placeholder='example@email.com') }}
         </label>
       </p>
       <p>
         <label><span>message</span>
-          <textarea rows="8" placeholder="hello!"></textarea>
+          {{ form.message(placeholder='hello!',rows=10) }}
         </label>
       </p>
       <input type="submit" value="send">
