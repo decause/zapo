@@ -31,6 +31,7 @@ def contact():
 	form = ContactForm()
 	if form.validate_on_submit():
 		flash('Thank you for your email! We\'ll get back to you as soon as we can.')
+		# contact_email()
 		return redirect('/contact')
 	return render_template('contact.html',
 		title = 'contact',
