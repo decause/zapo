@@ -24,5 +24,5 @@ def contact_email(name, email, message):
 			message = message),
 		render_template('contact_email.html',
 			name = name,
-			email = emailm
+			email = email,
 			message = message))
