@@ -1,0 +1,6 @@
+New email from:
+{{form_content.name}}
+{{form_content.email}}
+
+Message:
+{{form_content.message}}
