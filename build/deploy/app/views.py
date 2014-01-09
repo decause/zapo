@@ -1,6 +1,7 @@
 from flask import render_template, flash, redirect
 from app import app
 from forms import ContactForm
+from emails import contact_email
 
 # index
 @app.route('/')
@@ -29,7 +30,8 @@ def work():
 def contact():
 	form = ContactForm()
 	if form.validate_on_submit():
-		return redirect('/')
+		flash('Thank you for your email! We\'ll get back to you as soon as we can.')
+		return redirect('/contact')
 	return render_template('contact.html',
 		title = 'contact',
 		page = 'contact',
