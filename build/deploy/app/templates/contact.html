@@ -14,17 +14,17 @@
     <form id="contact-form" action="/contact" method="post">
       {{ form.hidden_tag() }}
       <p>
-        <label><span>name</span>
+        <label><span>name {% for error in form.errors.name %}<small style="color: red;">[{{error}}]</small>{% endfor %}</span>
           {{ form.name(placeholder='firstname lastname') }}
         </label>
       </p>
       <p>
-        <label><span>email</span>
+        <label><span>email {% for error in form.errors.email %}<small style="color: red;">[{{error}}]</small>{% endfor %}</span>
           {{ form.email(placeholder='example@email.com') }}
         </label>
       </p>
       <p>
-        <label><span>message</span>
+        <label><span>message {% for error in form.errors.name %}<small style="color: red;">[{{error}}]</small>{% endfor %}</span>
           {{ form.message(placeholder='hello!',rows=10) }}
         </label>
       </p>
