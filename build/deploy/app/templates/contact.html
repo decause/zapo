@@ -10,6 +10,7 @@
         <li>585-520-2068</li>
         <li>albion, new york</li>
       </ul>
+      {% with messages = get_flashed_messages() %}{% if messages %}{% for message in messages %}<p>{{ message }}</p>{% endfor %}{% endif %}{% endwith %}
     </div>
     <form id="contact-form" action="/contact" method="post">
       {{ form.hidden_tag() }}
