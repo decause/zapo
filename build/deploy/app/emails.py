@@ -14,11 +14,15 @@ def send_email(subject, sender, recipients, text_body, html_body):
 	thr = Thread(target = send_async_email, args = [msg])
 	thr.start()
 
-def contact_email(form_content):
+def contact_email(name, email, message):
 	send_email("Contact Form Email",
-		[form_content.email],
+		email,
 		CONTACT_EMAIL[0],
 		render_template('contact_email.txt',
-			content = form_content),
+			name = name,
+			email = email,
+			message = message),
 		render_template('contact_email.html',
-			content = form_content))
+			name = name,
+			email = emailm
+			message = message))
